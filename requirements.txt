@@ -1,2 +1,4 @@
 telethon>=1.17 
 sqlalchemy>=1.2
+python-dotenv 
+heroku3
