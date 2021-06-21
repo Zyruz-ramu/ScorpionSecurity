@@ -18,3 +18,4 @@ else:
 
     bot = TelegramClient(session_name, Var.APP_ID, Var.API_HASH)
 
+CMD_HNDLR = Var.CMD_HNDLR
