@@ -22,7 +22,7 @@ WE CREATED SCORPION
  Without 
  any USERBOT and spam plugin😂& 100%safe🛡️
 ```
-## 🆂🆄🅿🅿🅾🆁🆃
+## 🆂🆄🄿🄿🅾🆁🆃
 
 </p><p align="left"><a href="https://t.me/Psycho_Bots"> <img src="https://img.shields.io/badge/telegram-CHANNEL-yellow?style=for-the-badge&logo=telegram" alt="CHANNEL" /></a> 
 
