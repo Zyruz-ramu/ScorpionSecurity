@@ -19,7 +19,7 @@ class Var(object):
     HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
     HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
     CMD_HNDLR = os.environ.get("CMD_HNDLR", r"\.")
-    MAX_SPAM = int(os.environ.get("MAX_SPAM", 3))
+    MAX_SPAM = int(os.environ.get("MAX_SPAM", ""))
     PRIVATE_GROUP_ID = os.environ.get("PRIVATE_GROUP_ID", None)
     if PRIVATE_GROUP_ID is not None:
         try:
