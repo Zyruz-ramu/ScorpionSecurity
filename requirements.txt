@@ -4,4 +4,4 @@ python-dotenv
 heroku3
 telegraph
 
-telethon>
+
