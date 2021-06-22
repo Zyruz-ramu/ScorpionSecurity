@@ -76,17 +76,17 @@
   },
   "MAX_SPAM": {
     "description": "No oF PM you will get before approval",
-    "value": "3"
+    "value" "3"
   },
   "DM_TEXT": {
     "description": "Your coustom message in PM",
     "required": false
-    "value": ""
+    "value" ""
   },
   "PM_PIC": {
     "description": "Coustom Picture that you wanna to show in PM",
     "required": false
-    "value": ""
+    "value" ""
   }
   
    },
