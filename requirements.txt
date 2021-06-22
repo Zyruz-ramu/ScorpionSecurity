@@ -3,5 +3,6 @@ sqlalchemy>=1.2
 python-dotenv 
 heroku3
 telegraph
-
-
+aiofiles
+wheel
+cryptg
