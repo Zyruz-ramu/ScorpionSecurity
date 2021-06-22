@@ -15,6 +15,7 @@ class Var(object):
     BOT_TOKEN = os.environ.get("BOT_TOKEN", None)
     BOT_USERNAME = os.environ.get("BOT_USERNAME", None)
     PMSECURITY = os.environ.get("PMSECURITY", "on") 
+    DB_URI = os.environ.get("DATABASE_URL", None)
     LOAD_MYBOT = os.environ.get("LOAD_MYBOT", "True")
     HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
     HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
