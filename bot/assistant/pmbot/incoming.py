@@ -8,13 +8,13 @@ Incoming Message(s) Forwarder. ⊙﹏⊙
 
 """
 from telethon import events 
-from dmbot import tgbot
+from bot import bot
 
 from . import *
 
 # if incoming message
 
-@tgbot.on(events.NewMessage(func=lambda e: e.is_private))
+@bot.on(events.NewMessage(func=lambda e: e.is_private))
 async def new_message(event):
   
     imcoming = event.raw_text
@@ -42,4 +42,4 @@ async def new_message(event):
   # Don't try to steal credit else gay🥱
   # MY PERSONAL BOT
   # ANDI MANDI RANDI KANGERS KI MAA KI RANDI😛😝.
-  # MY PERSON BOT
+ 
