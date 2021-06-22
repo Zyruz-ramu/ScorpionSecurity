@@ -1,0 +1,106 @@
+ 
+{
+
+ "name": "Scorpion - Security",
+ "description": "An advanced security bot to protect from scammers",
+
+ "logo": "https://telegra.ph/file/23d3d0fa117ce727e25d8.jpg",
+ "keywords": [
+  "telegram",
+  "Advanced",
+  "scorpion",
+  "security",
+  "inline"
+ ],
+ 
+  "repository": "https://github.com/PsychoBots/ScorpionSecurity",
+
+ "stack": "heroku-20",
+
+   "env": {
+     
+      "ENV": {
+
+   "description": "Setting this to ANYTHING will enable heroku.",
+   "value": "ANYTHING"
+
+  },
+
+  "APP_ID": {
+
+   "description": "Get this value from my.telegram.org! Please do not steal",
+   "value": ""
+  },
+  
+  "API_HASH": {
+
+   "description": "Get this value from my.telegram.org! Please do not steal",
+   "value": ""
+  },
+  "HEROKU_APP_NAME": {
+    "description": "Paste your Heroku app Name",
+    "value": ""
+  },
+  "HEROKU_API_KEY": {
+    "description": "YOUR HEROKU ACCOUNT API KEY",
+    "value": ""
+  },
+  "STRING_SESSION": {
+    "description": "TELETHON STRING SESSION GET FROM https://replit.com/@loverboyXD/SESSIONSTRING-GEN",
+    "value": ""
+  },
+  "BOT_TOKEN": {
+    "description": "GET FROM @botfather",
+    "value": ""
+  },
+  "BOT_USERNAME": {
+    "description": "your bot Username Paste ",
+    "value": ""
+  },
+  "PRIVATE_GROUP_ID": {
+    "description": "Make a PRIVATE_GROUP_ID in Telegram",
+    "value": ""
+  },
+  "OWNER_USERNAME": {
+    "description": "Your Telegram Username",
+    "value": ""
+  },
+  "OWNER_ID": {
+    "description": "The your Interger number of your Telegram",
+    "value": ""
+  },
+  "CMD_HNDLR": {
+    "description": "Don't touch if you don't know",
+    "value" "."
+    "required": false
+  },
+  "MAX_SPAM": {
+    "description": "No oF PM you will get before approval",
+    "value": "3"
+  },
+  "DM_TEXT": {
+    "description": "Your coustom message in PM",
+    "required": false
+    "value": ""
+  },
+  "PM_PIC": {
+    "description": "Coustom Picture that you wanna to show in PM",
+    "required": false
+    "value": ""
+  }
+  
+   },
+
+ "addons": [{
+
+  "plan": "heroku-postgresql",
+
+  "options": {
+
+   "version": "12"
+
+  }
+
+ }]
+
+}
