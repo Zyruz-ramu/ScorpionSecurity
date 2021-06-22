@@ -8,11 +8,11 @@ Outgoing Message(s) Forwarder (•﹏•)
 
 """
 from telethon import events 
-from dmbot import tgbot
+from bot import bot
 
 from . import *
 
-@tgbot.on(events.NewMessage(func=lambda e: e.is_private))
+@bot.on(events.NewMessage(func=lambda e: e.is_private))
 async def out_going_message(event):
   
     s = await event.get_reply_message()
