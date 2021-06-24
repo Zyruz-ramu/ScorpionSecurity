@@ -29,7 +29,7 @@ def load_module(shortname):
         mod.bot = bot
        
         mod.Var = Var
-        mod.command = command
+        
         mod.logger = logging.getLogger(shortname)
 
 def start_mybot(shortname):
