@@ -56,7 +56,8 @@ def start_mybot(shortname):
         name = "bot.assistant.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
-        mod.tgbot = bot.tgbot
+        mod.bot = bot.bot
+
         spec.loader.exec_module(mod)
         sys.modules["bot.assistant" + shortname] = mod
         print("TGBot Has imported " + shortname)
@@ -86,7 +87,7 @@ def load_pmbot(shortname):
         name = "bot.assistant.pmbot.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
-        mod.tgbot = bot.tgbot
+        mod.bot = bot.bot
         spec.loader.exec_module(mod)
         sys.modules["bot.assistant.pmbot." + shortname] = mod
         print("PMBot Has imported " + shortname)
