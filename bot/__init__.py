@@ -1,7 +1,7 @@
 import os
 import time
 import asyncio
-
+from bot.Config import Var
 from telethon.sessions import StringSession
 
 from telethon import TelegramClient 
