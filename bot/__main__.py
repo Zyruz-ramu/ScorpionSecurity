@@ -3,7 +3,7 @@ from bot import bot
 from sys import argv
 from telethon import TelegramClient
 from bot.Config import Var 
-from telebot.utils import load_module, start_mybot, load_pmbot
+from bot.utils import load_module, start_mybot, load_pmbot
 from pathlib import Path
 import telethon.utils
 from bot import CMD_HNDLR
