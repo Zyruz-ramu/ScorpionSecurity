@@ -92,4 +92,4 @@ IF GETTING PROBLEM CONTACT TO SUPPORT CHAT
 
 # ~ BoT By [PsychoBots](https://t.me/Psycho_Bots) ~
 
-[![DEPLOY](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/PsychoBots/ScorpionSecurity)
+okucdn.com/deploy/button.svg)](hth
