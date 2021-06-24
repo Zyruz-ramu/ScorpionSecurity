@@ -39,7 +39,7 @@ else:
         ).start(bot_token=Var.BOT_TOKEN)
         print("Initialisation finished, no errors")
         print("Starting SCORPION")
-        bot.loop.run_until_complete(add_bot(Var.TG_BOT_USER_NAME_BF_HER))
+        bot.loop.run_until_complete(add_bot(Var.BOT_USERNAME))
         print("Startup Completed")
     else:
         bot.start()
