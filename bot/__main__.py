@@ -28,7 +28,7 @@ async def startup_log_all_done():
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
 else:
-    bot.tgbot = None
+    bot.bot = None
     if Var.BOT_USERNAME is not None:
         print("Initiating Inline Bot")
         # ForTheGreatrerGood of beautification
