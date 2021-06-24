@@ -1,0 +1,86 @@
+ 
+{
+ "name": "Scorpion Security",
+ "description": "An security bot to protect your Telegram account With the help of security in DM's",
+ "logo": "https://telegra.ph/file/23d3d0fa117ce727e25d8.jpg",
+ "keywords": [
+  "telegram",
+  "security",
+  "security",
+  "inline"
+ ],
+ "repository": "https://github.com/PsychoBots/ScorpionSecurity",
+ "stack": "heroku-20",
+ "env": {
+  "ENV": {
+   "description": "Setting this to ANYTHING will enable heroku.",
+   "value": "ANYTHING"
+  },
+  "APP_ID": {
+   "description": "Get this value from my.telegram.org!",
+   "value": ""
+  },
+  "API_HASH": {
+   "description": "Get this value from my.telegram.org!",
+   "value": ""
+  },
+  "STRING_SESSION": {
+   "description": "GET TELETHON string session from https://replit.com/@loverboyXD/SESSIONSTRING-GEN",
+   "value": ""
+  },  
+  "DM_TEXT": {
+   "description": "YOUR TEXT WHICH YOU Want to show in DM menu",
+   "value": "",
+   "required": false
+  },
+  "PM_PIC": {
+   "description": "PICTURE that you wana show in PM menu",
+   "value": "",
+   "required": false
+  },
+  "OWNER_USERNAME": {
+   "description": "Your Username",
+   "value": ""
+  },
+  "OWNER_ID": {
+   "description": "Your owner id",
+   "value": ""
+  },
+  "BOT_TOKEN": {
+   "description": "YOUR BOT TOKEN GET FROM @botfather",
+   "value": ""
+  },
+  "BOT_USERNAME": {
+   "description": "Your bot username",
+   "value"
+  },
+  "HEROKU_API_KEY": {
+   "description": "Your Heroku account api key",
+   "value": ""
+  },
+  "HEROKU_APP_NAME": {
+   "description": "Your heroku app name",
+   "value": ""
+  },
+  "MAX_SPAM": {
+   "description": "No. of pm before approval",
+   "value": "3",
+   "required": false
+  },
+  "CMD_HNDLR": {
+   "description": "Leave it as it is if you don't know",
+   "value": "",
+   "required": false
+  },
+  "PRIVATE_GROUP_ID": {
+   "description": "Your private group id it must start with -100....",
+   "value": ""
+  }
+ },
+ "addons": [{
+  "plan": "heroku-postgresql",
+  "options": {
+   "version": "12"
+  }
+ }]
+}
