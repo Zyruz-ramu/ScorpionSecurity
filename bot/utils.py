@@ -3,7 +3,7 @@ import math
 from bot import bot
 from telethon import events
 from pathlib import Path
-from bot.Config import Var, Config
+from bot.Config import Var
 import logging
 import inspect
 
