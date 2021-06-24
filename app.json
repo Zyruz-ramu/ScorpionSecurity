@@ -77,7 +77,7 @@
   "OWNER_ID": {
    "description": "Your owner Id",
    "value": "",
-   "required": false
+   "required": true
   },
   "PM_PIC": {
   "description": "telegra.ph link to theimage you want as pmpermit pic, leave blank for default one!",
