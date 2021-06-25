@@ -163,12 +163,17 @@ async def bot(event):
     else:
         await event.answer("You can't use this bot.", alert=True)
 
-@bot.on(events.callbackquery.CallbackQuery(data=re.compile(b"custom")))
-if event.sender_id == OWNER_ID:
-        await event.reply(event.chat_id, "WHAT YOU WANNNA TO CHANGE IN YOUR PM SECURITY BOT👀", Button=[
-                              Button.inline("PM PIC🖼️", data="pmpic"), 
-                              Button.inline("PM TEXT", data="pmtext")]
-                              )
+@tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"pmbot"))
+          )  # pylint: disable=oof
+async def pmbot(event):
+    if event.sender_id == OWNER_ID:
+        await event.delete()
+        await tgbot.send_message(event.chat_id,
+                                 "WHAT YOU WANNNA TO CHANGE IN YOUR PM SECURITY BOT👀",
+                                 buttons=[
+                                     [Button.inline("PM_PIC", data="pmpic"), 
+                                     [Button.inline("PM_TEXT", data="pmtext")]
+                                 ])
 
 @bot.on(events.callbackquery.CallbackQuery(data=re.compile(b"pmtext")))
 async def a_txt(event):
