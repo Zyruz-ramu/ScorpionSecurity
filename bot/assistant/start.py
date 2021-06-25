@@ -173,8 +173,6 @@ async def pmbot(event):
                                  buttons=[
                                      [Button.inline("PM_PIC", data="pmpic"), 
                                      [Button.inline("PM_TEXT", data="pmtext")]
-                                 )
-
 @bot.on(events.callbackquery.CallbackQuery(data=re.compile(b"pmtext")))
 async def a_txt(event):
     if event.sender_id == OWNER_ID:
