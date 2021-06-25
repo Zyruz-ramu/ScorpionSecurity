@@ -48,7 +48,7 @@ async def start_all(event):
              ]
            )
                                   
-    else LOAD_MYBOT=="TRUE":
+    else:
             await bot.send_file(event.chat_id, BOT_PIC, caption=startother, Button=[
                 [Button.inline("What can i do🤔", data="what"),
                 Button.inline("What is this❓", data="know")]
