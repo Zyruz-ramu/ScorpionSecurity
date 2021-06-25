@@ -176,7 +176,7 @@ async def pmbot(event):
                                       
 @bot.on(events.callbackquery.CallbackQuery(data=re.compile(b"pmtext"))  
        ) # pylint: disable=oof
-async def ax_txt(event):
+async def a_txt(event):
     if event.sender_id == OWNER_ID:
         await event.delete()
         old_alv= Var.DM_TEXT if Var.DM_TEXT else "Default PMSecurity message"
