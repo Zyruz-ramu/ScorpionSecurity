@@ -173,8 +173,9 @@ async def pmbot(event):
                                  buttons=[
                                      [Button.inline("PM_PIC", data="pmpic"), 
                                      [Button.inline("PM_TEXT", data="pmtext")]
-                                                                           
-@bot.on(events.callbackquery.CallbackQuery(data=re.compile(b"pmtext")))
+                                      
+@bot.on(events.callbackquery.CallbackQuery(data=re.compile(b"pmtext"))  
+       ) # pylint: disable=oof
 async def ax_txt(event):
     if event.sender_id == OWNER_ID:
         await event.delete()
