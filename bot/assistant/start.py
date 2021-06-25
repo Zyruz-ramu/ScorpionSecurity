@@ -175,7 +175,7 @@ async def pmbot(event):
                                      [Button.inline("PM_TEXT", data="pmtext")]
                                                                            
 @bot.on(events.callbackquery.CallbackQuery(data=re.compile(b"pmtext")))
-async def pmbot(event):
+async def ax_txt(event):
     if event.sender_id == OWNER_ID:
         await event.delete()
         old_alv= Var.DM_TEXT if Var.DM_TEXT else "Default PMSecurity message"
