@@ -163,7 +163,7 @@ async def bot(event):
     else:
         await event.answer("You can't use this bot.", alert=True)
 
-@tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"pmbot"))
+@bot.on(events.callbackquery.CallbackQuery(data=re.compile(b"pmbot"))
           )  # pylint: disable=oof
 async def pmbot(event):
     if event.sender_id == OWNER_ID:
@@ -173,7 +173,7 @@ async def pmbot(event):
                                  buttons=[
                                      [Button.inline("PM_PIC", data="pmpic"), 
                                      [Button.inline("PM_TEXT", data="pmtext")]
-                                 ])
+                                 )
 
 @bot.on(events.callbackquery.CallbackQuery(data=re.compile(b"pmtext")))
 async def a_txt(event):
