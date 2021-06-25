@@ -121,7 +121,8 @@ async def sett(event):
         await bot.send_message(event.chat_id, "HELLO! sir how can I help you today..\n\nSettings👀 Options are below choose😗:", Button=[
                           [Button.inline("BOT_PIC🖼", data="pic"),
                           Button.inline( "PM BOT", data="custom")]
-                      )
+                          ])
+                      
     else:
         await event.answer("Make your own @PsychoBots_Chat ←SUPPORT", alert=True)
 
