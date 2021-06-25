@@ -48,7 +48,7 @@ async def start_all(event):
              ]
            )
                                   
-    else LOAD_MYBOT == "True":
+    else LOAD_MYBOT=="TRUE":
             await bot.send_file(event.chat_id, BOT_PIC, caption=startother, Button=[
                 [Button.inline("What can i do🤔", data="what"),
                 Button.inline("What is this❓", data="know")]
@@ -93,7 +93,8 @@ async def owner(event):
                     
                       [Button.inline("⚒️Settings⚒️", data="sett"),
                       Button.inline("SUPPORT👑", data="supp"),
-                      ])
+                      ]
+                             ])
                       
 @bot.on(events.callbackquery.CallbackQuery(data=re.compile(b"supp")))
 async def support(event):
@@ -161,7 +162,7 @@ async def bot(event):
     else:
         await event.answer("You can't use this bot.", alert=True)
 
-@bot.on(events.callbackquery.CallbackQuery(data=re.compile(b"custom"))
+@bot.on(events.callbackquery.CallbackQuery(data=re.compile(b"custom")))
     if event.sender_id == OWNER_ID:
         await event.reply(event.chat_id, "WHAT YOU WANNNA TO CHANGE IN YOUR PM SECURITY BOT👀", Button=[
                               Button.inline("PM PIC🖼️", data="pmpic"), 
