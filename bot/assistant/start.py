@@ -174,7 +174,7 @@ async def pmbot(event):
                                      [Button.inline("PM_PIC", data="pmpic"), 
                                      [Button.inline("PM_TEXT", data="pmtext")]
                                       
-                                     ])
+                                   
        else:
         await event.answer("You can't use this bot.", alert=True)
                                      
